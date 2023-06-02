@@ -1,0 +1,29 @@
+<!-- <p>hero works!</p> -->
+<h1> {{name}} </h1>
+<dl>
+    <td>Nombre:</td>
+    <dd> {{name}} </dd>
+
+    <td>Edad:</td>
+    <dd> {{age}} </dd>
+
+    <td>Metodo:</td>
+    <dd> {{ hdess() }} </dd>
+
+    <td>Capitalizado:</td>
+    <dd> {{ pepe }} </dd>    
+</dl>   
+
+<button 
+*ngIf="name !== 'Spiderman'"
+class="btn btn-primary mx-2" 
+(click)="changename()">
+    Cambiar Nombre
+</button>
+
+<button
+*ngIf="age !== 21" 
+class="btn btn-outline-primary" 
+(click)="changeage()">
+    Cambiar Edad
+</button>
